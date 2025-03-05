@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="number">Number of pages:</label>
+        <input type="number" id="number" value="32">
+        <button onclick="calculatePages()">Calculate</button>
+        <div class="output">
+            <p>Odd Pages: <span id="oddPages" data-full-text=""></span> <button onclick="copyToClipboard('oddPages')">Copy</button></p>
+            <p>Even Pages: <span id="evenPages" data-full-text=""></span> <button onclick="copyToClipboard('evenPages')">Copy</button></p>
+        </div>
+    </div>
+    <script src="./slides.js" defer="defer"></script>
+</body>
+</html>
